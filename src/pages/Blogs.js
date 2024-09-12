@@ -3,7 +3,7 @@ import axios from "axios";
 import BlogCard from "../components/BlogCard";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
-  //get blogs
+  //get blogs of all the users
   const getAllBlogs = async () => {
     try {
       const { data } = await axios.get("/api/v1/blog/all-blog");
